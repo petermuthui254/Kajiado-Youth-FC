@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rhein football club for footballers in Liverpool, England">
+    <meta name="keywords" content="Rhein FC, football club, liverpool, england">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/logokjd.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/logokjd.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/logokjd.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>KYFC</title>
+</head>
+<body>
+    <!-- Header which will be present on each page  -->
+    <header>
+        <a href="index.html">
+            <img src="assets/images/logokjd.png" class="badge" alt="Rhein FC badge">
+            <h1 id="logo">KYFC</h1>
+        </a>
+        
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="teams.html">Team</a>
+                </li>
+                <li>
+                    <a href="fixtures.html">Fixtures</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="active">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- signup form for any user interested in joining the team  -->
+    <section class="form-section">
+        <form class="signup-form" method="GET" action="form-complete.html">
+            <h2>Player Sign Up <i class="fas fa-futbol"></i></h2>
+            
+            <label for="fname">First Name</label>
+            <input class="text-input" id="fname" name="first_name" type="text" required>
+            
+            <label for="lname">Last Name</label>
+            <input class="text-input" id="lname" name="last_name" type="text" required>
+            
+            <label for="email">Email Address</label>
+            <input class="text-input" type="email" id="email" name="email_address" required>
+
+            <label for="phone">Contact Number</label>
+            <input class="text-input" type="tel" id="phone" name="phone" required>
+
+            <label for="position">Your Position</label>
+            <select id="position" name="position">
+            <option value="goalkeeper">Goalkeeper</option>
+            <option value="left-back">Left Back</option>
+            <option value="centre-back">Centre Back</option>
+            <option value="right-back">Right Back</option>
+            <option value="left-winger">Left Winger</option>
+            <option value="centre-mid">Centre Mid</option>
+            <option value="right-winger">Right Winger</option>
+            <option value="striker">Striker</option>
+            </select>
+
+            <input class="join-button" type="submit" value="Let's Go!">
+        </form>
+    </section>
+  <!-- footer which will be present on each page  -->
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://www.facebook.com/share/1KnAa4qSXJ/" target="_blank" rel="noopener" aria-label="Visit or Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/share/1KnAa4qSXJ/" target="_blank" rel="noopener" aria-label="Visit or Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/share/1KnAa4qSXJ/" target="_blank" rel="noopener" aria-label="Visit or YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/share/1KnAa4qSXJ/" target="_blank" rel="noopener" aria-label="Visit or Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/584709fa3c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

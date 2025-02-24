@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+header {
+    background: #0F74BC;
+    height: 75px;
+}
+
+/* Headings and logo */
+
+.badge {
+    width: 75px;
+    height: 75px;
+    float: left;
+    padding-left: 5px;
+}
+
+h1, h2 {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #0F74BC;
+}
+
+#logo {
+    float: left;
+    font-size: 300%;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.sponsor {
+    height: 75px;
+    width: 75px;
+    float: right;
+}
+
+#koop {
+    font-family: Roboto, sans-serif;
+    float: right;
+    color: #fff;
+    margin-right: 5px;
+}
+
+/* Navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#menu, #logo, #koop {
+    line-height: 75px;
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
+}
+
+/* Main image and cover text*/
+
+#main-image {
+    height: 700px;
+    width: 100%;
+    background: url(../images/dimbakjd.jpg) no-repeat center center;
+    overflow: hidden;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
+    font-size: 200%;
+}
+
+#cover-text {
+    font-size: 100%;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 50px;
+
+    width: 300px;
+    height: 250px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgb(81, 100, 160, .7);
+
+    top: 300px;
+    left: 100px;
+
+    position: absolute;
+}
+
+/* Club bio */
+
+#club-bio {
+    height: 500px;
+}
+
+#column-left {
+    width: 45%;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0 ;
+}
+
+#column-right {
+    height: 400px;
+    background: url(../images/training2kjd.jpg) no-repeat center center;
+    overflow: hidden;
+}
+
+hr {
+    border-top: 1px solid #0F74BC;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.column-left-heading {
+    width: 70%;
+    line-height: 20px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+
+#sub-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 300%;
+}
+
+/* Club location */
+
+#location-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 300%;
+}
+
+.location {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#map {
+    text-align: center;
+}
+
+.google-map {
+    height: 400px;
+    width: 90%;
+}
+
+/* footer */
+
+footer {
+    height: 75px;
+    bottom: 0;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 1%;
+    color: #0F74BC;
+}
+
+/* Fixtures */
+
+#fixtures {
+    background-image: url(../images/fixtures.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#fixtures div {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding-top: 40px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#fixtures div h2 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+#fix-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 300%;
+}
+
+/* League standings */
+
+#table-title {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 300%;
+}
+
+#table-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+table {
+    border: 1px solid #3a3a3a;
+    width: 60%;
+    margin: 0 auto;
+}
+
+td {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#title-row {
+    background: #0F74BC;
+    margin: 5px;
+    color: #fff;
+    font-size: 120%;
+    letter-spacing: 2px;
+}
+
+/* Team */
+
+#goalkeeper div{
+    margin: auto;
+}
+
+#goalkeeper {
+    margin-bottom: 40px;
+}
+
+#defenders {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#defenders div{
+    margin-bottom: 40px;
+}
+
+#midfielders {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#midfielders div{
+    margin-bottom: 40px;
+}
+
+#attackers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#attackers div{
+    margin-bottom: 40px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #0F74BC;
+    color: #0F74BC;
+    font-size: 150%;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #0F74BC;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back h2 {
+    color: white;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 180%;
+  }
+
+  .flip-card-back p {
+    margin: 4px;
+    font-size: 130%;
+    padding: 2px;
+    text-align: left;
+  }
+
+
+
+#team-title {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 300%;
+}
+
+.pos-title {
+    margin: 20px;
+    text-align: center;
+    font-size: 160%;
+}
+
+
+/* form */
+
+.form-section {
+    clear: left;
+    background: url(../images/nathan-rogers-ObhCU6Vhoe8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 733px;
+    padding-bottom: 75px;
+}
+
+.signup-form {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgb(81, 100, 160, .7);
+    max-width: 500px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa; 
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #f16c6b;
+}
+
+.signup-form h3 {
+    color: #fafafa;
+    margin-bottom: 20px;
+    padding: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 140%;
+}
+
+/* 404 error page */
+
+#error-section {
+    clear: left;
+    background: url(../images/404-image.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    padding-bottom: 75px;
+}
+
+.error-message {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgb(81, 100, 160, .7);
+    max-width: 500px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.error-message h2 {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+
+.error-message h3 {
+    text-align: center;
+    font-size: 150%;
+}
+
+.return-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa; 
+    display: block;
+}
+
+/* Media queries */
+
+/* For larger and medium screen sizes from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+    #club-bio {
+        width: 65%;
+        height: 1000px;
+        margin: 0 auto;
+    }
+
+    #column-right {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+        height: 400px;
+    }
+
+    #column-left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        height: 400px;
+    }
+
+    #fixtures div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+}
+
+/* For medium screen sizes from 950px wide and down */
+
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+
+    header {
+        background: #0F74BC;
+        height: 125px;
+    }
+
+    #club-bio {
+        width: 90%;
+    } 
+
+    .column-left-heading {
+        width: 90%;
+        margin: 5px;
+        text-align: center;
+    }
+}
+
+/* For small screen sizes from 550px wide and down */
+
+@media screen and (max-width: 550px) {
+    #logo {
+        font-size: 200%;
+    }
+
+    .badge {
+        width: 65px;
+    }
+
+    .sponsor {
+        height: 70px;
+        width: 70px;
+    }
+
+    #koop {
+        font-size: 100%;
+    }
+
+    #menu {
+        font-size: 100%;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-bio {
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+    }
+
+    #column-left, #column-right {
+        height: 480px;
+    }
+
+    #column-right {
+        background-position: right center;
+    }
+
+    .column-left-heading {
+        margin: 5px;
+        text-align: center;
+    }
+
+    #sub-title {
+        font-size: 250%;
+        margin: 10px 0;
+    }
+
+    #location-title {
+        font-size: 250%;
+        margin: 10px 0;
+    }
+
+}
+
+/* For phone screen sizes from 410px wide and down */
+
+@media screen and (max-width: 410px) {
+    .badge {
+        width: 45px;
+        height: 55px;
+        padding: 0;
+    }
+
+    .sponsor {
+        height: 50px;
+        width: 50px;
+    }
+
+    #koop {
+        font-size: 70%;
+    }
+
+    #menu {
+        font-size: 75%;
+        margin-left: 10px;
+    }
+
+    #logo {
+        font-size: 170%;
+    }
+
+    #menu li{
+        margin-right: 10px;
+    }
+
+}
